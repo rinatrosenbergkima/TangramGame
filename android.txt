@@ -1,0 +1,3 @@
+title=TangramGame
+author=Rinat Rosenberg-Kima
+orientation=portrait
