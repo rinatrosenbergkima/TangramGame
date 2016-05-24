@@ -1,0 +1,46 @@
+#:kivy 1.0
+#:import kivy kivy
+#:import win kivy.core.window
+
+# open screen
+<OpenScreen>
+    orientation: "vertical"         # defines the orientation
+    BoxLayout:                      # Layout of first line
+        orientation: "horizontal"   # defines the orientation
+        BoxLayout:                  # this is a "dummy" layout, for spacing
+        Label:
+            text: "Tangram Open Screen"    # the actual text
+            font_size: 40           # font size in pixels
+            color: (0, 0.71, 1., 1) # color in rgb
+            bold: True
+            size_hint_x: 0.5        # relative x-size (0-1.0)
+    FloatLayout:
+    Button:
+        id: "EnterIntro"
+        text:"Enter"
+        on_press: app.enter_intro_task_screen()
+        pos: (250,50)
+        size_hint_x: 0.2
+        size_hint_y:0.3
+
+<IntroTaskScreen>
+    orientation: "vertical"         # defines the orientation
+    BoxLayout:                      # Layout of first line
+        orientation: "horizontal"   # defines the orientation
+        BoxLayout:                  # this is a "dummy" layout, for spacing
+        Label:
+            text: "Tangram Game"    # the actual text
+            font_size: 40           # font size in pixels
+            color: (0, 0.71, 1., 1) # color in rgb
+            bold: True
+            size_hint_x: 0.5        # relative x-size (0-1.0)
+    FloatLayout:
+    Scatter:
+        BoxLayout:
+            id: "Intro Screen"
+            color:(1,0,0,1)
+            text:"Enter"
+            on_touch_up: app.enter_intro_task_screen()
+            pos: (250,50)
+            size_hint_x: 0.2
+            size_hint_y:0.3

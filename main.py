@@ -3,6 +3,8 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 # from kivy.uix.gridlayout import GridLayout
 from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.core.image import Image as CoreImage
+
 kivy.require('1.9.0')
 
 
