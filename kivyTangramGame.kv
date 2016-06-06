@@ -26,12 +26,24 @@
                     # self here refers to the widget i.e BoxLayout
                     pos:self.pos
                     size:self.size   # self here refers to the widget i.e BoxLayout
+            FloatLayout:
+                margins:0
             Image:
                 source:"images\cake.png"
-                size_hint_y:0.2
-                size_hint_y:0.2
-                pos:(0.3,0.2)
-
+                size_hint_y:0.4
+                pos:(0,0)
+            FloatLayout:
+                Image:
+                    source:"images\cake.png"
+                    size_hint_y:0.4
+                    pos:(100,200)
+            Button:
+                id: "EnterIntro"
+                text:"Enter"
+                on_press: app.enter_intro_task_screen()
+                pos: (250,50)
+                size_hint_x: 0.2
+                size_hint_y:0.3
 
 <IntroTaskScreen>
     orientation: "vertical"         # defines the orientation
