@@ -1,0 +1,36 @@
+#:import random random
+<HourGlassWidget>:
+    BoxLayout:
+        size_hint_x: 0.5
+        size_hint_y: 0.5
+        orientation: 'vertical'
+        BoxLayout:
+            id: topRec
+            size_hint_x: 0.5
+            size_hint_y: 0.3
+            canvas.before:
+                Color:
+                    rgba: 1,1,0.8,1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+        BoxLayout:
+            id: middleRec
+            size_hint_x: 0.01
+            size_hint_y: 0.4
+            canvas.before:
+                Color:
+                    rgba: 1,0,0,1
+                Rectangle:
+                    pos: self.pos
+                    size: (self.width, self.height)
+        BoxLayout:
+            id: bottomRec
+            size_hint_x:0.5
+            size_hint_y:0.3
+            canvas.before:
+                Color:
+                    rgba: 1,0,1,1
+                Rectangle:
+                    pos: self.pos
+                    size:self.size
