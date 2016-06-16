@@ -156,7 +156,9 @@ class HourGlassWidget (Widget):
 
 class RootWidgetApp(App):
     def build(self):
-        return RootWidget()
+        rw = RootWidget()
+        print(rw.ids['hourglass'])
+        return rw
 
 if __name__ == "__main__":
     RootWidgetApp().run()
