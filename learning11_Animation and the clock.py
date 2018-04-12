@@ -1,8 +1,7 @@
 from kivy.base import runTouchApp
 from kivy.lang import Builder
-
 from kivy.uix.widget import Widget
-
+from kivy.uix.scatter import Scatter
 from kivy.clock import Clock
 from kivy.animation import Animation
 
